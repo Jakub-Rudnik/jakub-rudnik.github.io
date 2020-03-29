@@ -5,16 +5,15 @@ let nav_moblie = document.querySelector(".nav__mobile");
 
 var tl = gsap.timeline();
 
-tl.set(header, { opacity: 0, {autoAlpha:0}})
-  .set(hero, { opacity: 0, x: "100%", {autoAlpha:0}})
-  .set(nav, { y: "500%", {autoAlpha:0} })
-  .set(nav_moblie, { y: "200%", {autoAlpha:0} })
+tl.set(header, { opacity: 0 })
+  .set(hero, { opacity: 0, x: "100%" })
+  .set(nav, { y: "500%" })
+  .set(nav_moblie, { y: "200%" })
 
   .to(header, {
     opacity: 1,
     ease: Power2.easeInOut,
-    duration: 2,
-     {autoAlpha:1}
+    duration: 2
   })
 
   .to(
@@ -23,8 +22,7 @@ tl.set(header, { opacity: 0, {autoAlpha:0}})
       opacity: 1,
       x: "0%",
       ease: Power2.easeInOut,
-      duration: 1.5,
-      {autoAlpha:1}
+      duration: 1.5
     },
     "-=2"
   )
@@ -35,8 +33,7 @@ tl.set(header, { opacity: 0, {autoAlpha:0}})
       y: "0%",
       ease: Power2.easeInOut,
       duration: 1.5,
-      stagger: 0.2,
-      {autoAlpha:1}
+      stagger: 0.2
     },
     "-=2"
   )
@@ -46,8 +43,7 @@ tl.set(header, { opacity: 0, {autoAlpha:0}})
     {
       y: "0%",
       ease: Power2.easeInOut,
-      duration: 1.5,
-      {autoAlpha:1}
+      duration: 1.5
     },
     "-=2"
   );
