@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Megrim";
+  src: url("../font/Megrim/Megrim-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/Open_Sans/OpenSans-Light.ttf");
+}
+
+body {
+  font-family: Open Sans;
+  overflow: hidden;
+}
+
+.mobile__menu1 {
+  width: 100vw;
+  height: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eeeeee;
+  z-index: 15;
+  position: absolute;
+  transition: all 500ms ease;
+  opacity: 0;
+}
+
+.mobile__menu1 a {
+  font-size: 2em;
+  margin-top: 5%;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile__menu1 a:hover {
+  cursor: pointer;
+}
+
+.mobile__menu1 button {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 10%;
+  outline: none;
+  background-color: #eeeeee;
+}
+
+.mobile__menu1 button:hover {
+  cursor: pointer;
+}
+
+.mobile__menu1 button img {
+  transform: scale(2);
+}
+
+.main {
+  background-color: #eeeeee;
+  font-family: Open Sans;
+  width: 100vw;
+  height: 100vh;
+}
+
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+menu img {
+  transform: scale(0.35);
+}
+
+menu a {
+  margin-right: 4%;
+  font-size: 1.5em;
+  padding: 1%;
+  transition: all 500ms ease;
+  box-shadow: inset -4px -4px 10px #ffffff, inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 9vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+menu a:first-of-type {
+  width: 16vw;
+  margin-left: -5vw;
+}
+
+menu a:hover {
+  cursor: pointer;
+}
+
+menu a:last-of-type {
+  margin-right: 0;
+}
+
+menu .menuBtn {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  right: 5%;
+  display: none;
+  outline: none;
+  background-color: #eeeeee;
+}
+
+menu .menuBtn:hover {
+  cursor: pointer;
+}
+
+menu .menuBtn img {
+  transform: scale(1);
+}
+
+.content {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  background-size: cover;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.content .text {
+  color: white;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 12vh;
+  height: 25vh;
+}
+
+.content .text .title {
+  font-family: Megrim;
+  font-size: 5em;
+}
+
+.content .text .description {
+  font-size: 1.3em;
+  margin-top: 2%;
+}
+
+.content .btn-line {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.content .btn-line .btnDown {
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 500ms ease;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content .btn-line .btnDown p {
+  font-size: 0.8em;
+  margin-bottom: 5%;
+}
+
+.content .btn-line .btnDown:hover {
+  cursor: pointer;
+}
+
+.price__list {
+  width: 100%;
+  height: 95vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price__list .btnUp {
+  position: absolute;
+  width: 9%;
+  height: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 105%;
+  transition: all 500ms ease;
+}
+
+.price__list .btnUp p {
+  font-size: 0.8em;
+  margin-bottom: 5%;
+}
+
+.price__list .btnUp:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.price__list table {
+  border-collapse: collapse;
+  width: 80vw;
+  height: 60vh;
+  border: 1px solid black;
+  margin-top: 2%;
+  font-size: 1.2em;
+}
+
+.price__list table tr {
+  border: 1px solid black;
+}
+
+.price__list table td {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.price__list table .left {
+  text-align: left;
+}
+
+.price__list table .right {
+  text-align: right;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eeeeee;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  menu img {
+    transform: scale(0.3);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  menu img {
+    transform: scale(0.25);
+  }
+  menu a {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  menu img {
+    transform: scale(0.18);
+  }
+  menu a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  menu img {
+    transform: scale(0.18);
+  }
+  menu a {
+    font-size: 1em;
+  }
+  .content .text .description {
+    font-size: 1em;
+  }
+  .content .btnDown .btn {
+    width: 70%;
+    height: 70%;
+  }
+  .price__list .btnUp .btn {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  menu img {
+    transform: scale(0.4);
+  }
+  menu a:not([id="first"]) {
+    display: none;
+  }
+  menu #first {
+    width: 35vw;
+  }
+  menu .menuBtn {
+    display: block;
+  }
+  .content .img img {
+    width: 28vw;
+  }
+  .content .img:after {
+    width: 28vw;
+  }
+  .content .text .description {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  menu #first {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  menu img {
+    transform: scale(0.3);
+  }
+  menu #first {
+    width: 60vw;
+  }
+  .content .btn-line {
+    margin-top: 30vh;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+}

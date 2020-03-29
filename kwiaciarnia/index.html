@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kwiaciarnia Krystyna</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.svg" />
+  </head>
+  <body>
+      <section class="landing_page">
+        <header id="header">
+          <img src="./img/logo.svg" alt="logo" />
+          <p>Krystyna</p>
+        </header>
+        <div class="hero">
+          <div class="hero__slider">
+            <img src="./img/church.jpg" alt="" />
+            <img src="./img/flower.png" alt="" />
+            <img src="./img/bouquet.jpg" alt="" />
+          </div>
+        </div>
+        <nav id="nav">
+          <a href="./kwiaty.html"><div class="nav__element" id="kwiaty"><p>Kwiaty</p></div></a>
+          <a href="./bukiety.html"><div class="nav__element"><p>Bukiety</p></div></a>
+          <a href="./slub.html"><div class="nav__element"><p>Ślub</p></div></a>
+          <a href="./pogrzeb.html"><div class="nav__element"><p>Pogrzeb</p></div></a>
+          <div class="nav__element" onclick=location.href="#contact"><p>Kontakt</p></div>
+          <div class="nav__mobile">
+            <div class="nav__mobile--container">
+              <div class="nav__mobile--element">
+                <a href="./kwiaty.html"><img src="./img/bouquet.svg" class="bouquet" />
+                <p id="1">Kwiaciarnia</p></a>
+              </div>
+              <div class="nav__mobile--element">
+                <img src="./img/flower_icon_mobileNav.svg" class="flower" />
+                <p id="2">Ogrodnictwo</p>
+              </div>
+              <div class="nav__mobile--element" onclick=location.href="#contact">
+                <img src="./img/mdi_call.svg" class="phone" />
+                <p id="3">Kontakt</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="gallery">
+        <div class="gallery__windowBIG" id="BIG">
+          <img id="image" src="./img/flower.png" alt="">
+          <div class="cm">
+            <img id="CloseMenu" src="./img/menu_close.svg" alt="">
+          </div>
+        </div>
+        <div class="gallery__window" id="g1"><img src="./img/flower.png" alt="" onclick=location.href="#BIG"><p class="gallery__hover">Kwiaty</p></div>
+        <div class="gallery__window" id="g2"><img src="./img/church.jpg" alt="" onclick=location.href="#BIG"><p class="gallery__hover">Ślub</p></div>
+        <div class="gallery__window" id="g3"><img src="./img/bouquet.jpg" alt="" onclick=location.href="#BIG"><p class="gallery__hover">Bukiety</p></div>
+        <div class="gallery__window" id="g4"><img src="./img/church.jpg" alt="" onclick=location.href="#BIG"><p class="gallery__hover">Kościoły</p></div>
+        <div class="gallery__window" id="g5"><img src="./img/bouquet.jpg" alt="" onclick=location.href="#BIG"><p class="gallery__hover">Pogrzeb</p></div>
+        <div class="gallery__window" id="g6"><img src="./img/flower.png" alt="" onclick=location.href="#BIG"><p class="gallery__hover">Kwiaty</p></div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact__content">
+          <div class="contact__left">
+            <p class="bold">Chesz się z nami skontaktować?</p>
+            <p class="bold">Chcesz zamówić bukiet swojej ukochanej?</p>
+            <p class="bold">Chcesz omówić swoje wymarzone dekoracje na ślub?</p>
+            <p>Napisz do nas poprzez formulaż, a na pewno się z tobą skontaktujemy!</p>
+            <div class="simply">
+              <p>Zobacz jakie to proste</p>
+              <img src="./img/arrow_down.svg" alt="">
+            </div>
+          </div>
+          <div class="contact__right">
+              <div class="simply">
+                <p>Zobacz jakie to proste</p>
+                <img src="./img/arrow_down.svg" alt="">
+              </div>
+              <form action="https://formspree.io/xpzrgbjz" method="POST">
+                <input class="input" type="text" placeholder="Imię i Nazwisko" name="Imię i Nazwiko">
+                <input class="input" type="email" placeholder="E-mail" name="E-mail">
+                <textarea name="Treść" placeholder="Tutaj napsiz swoją wiadomość do nas!"></textarea>
+                <input type="submit" value="Wyślij">
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="information">
+          <div class="adres">
+            <p>Adres:</p>
+            <p>"Kwiaciarnia Krystyna" Krystyna Rudnik</p>
+            <p>Kadłub Turawski</p>
+            <p>ul. Le$na 10-1</p>
+            <p>Telefon: --- --- ---</p>
+          </div>
+          <div class="fb">
+            <a href="https://www.facebook.com/Kwiaciarnia-Krystyna-1864443963876932/"><img src="./img/fb_icon.svg" alt=""></a>
+            <p>Odzwiedź nas na facebooku!</p>
+          </div>
+        </div>
+        <div class="footer">Kwiaciarnia Krystyna &copy 2020 All rights reserved</div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js" integrity="sha256-dGVGQNsKGrmq9K3SboxNKb22dHKCX4srU+4By9N3iLs=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
