@@ -85,13 +85,13 @@ g4.addEventListener("click", () => {
 g5.addEventListener("click", () => {
   gallerybig.style.opacity = "1";
   gallerybig.style.pointerEvents = "all";
-  img.src = "img/bouquet.jpg";
+  img.src = "img/wieniec.jpg";
 });
 
 g6.addEventListener("click", () => {
   gallerybig.style.opacity = "1";
   gallerybig.style.pointerEvents = "all";
-  img.src = "img/flower.png";
+  img.src = "img/kompozycja.jpg";
 });
 
 CloseMenu.addEventListener("click", () => {

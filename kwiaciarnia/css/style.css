@@ -140,7 +140,7 @@ nav {
 
 .gallery {
   width: 100vw;
-  min-height: 100vh;
+  height: 110vh;
   background-color: #eeeeee;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -196,7 +196,7 @@ nav {
 
 .gallery .gallery__window {
   width: 90%;
-  height: 70%;
+  height: 60%;
   background-color: #eeeeee;
   box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
