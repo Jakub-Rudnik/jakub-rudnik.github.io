@@ -9,12 +9,12 @@ function delay(n) {
 
 function pageTransition() {
     var tl = gsap.timeline();
-    tl.to(".container", { duration: .3, opacity: 0, ease: Power4 });
+    tl.to(".container", { duration: .5, opacity: 0, ease: Power4 });
 }
 
 function contentAnimation() {
     var tl = gsap.timeline();
-    tl.to(".container", { duration: .4, opacity: 1, ease: Power4 });
+    tl.to(".container", { duration: .5, opacity: 1, ease: Power4 });
 }
 
 barba.init({
