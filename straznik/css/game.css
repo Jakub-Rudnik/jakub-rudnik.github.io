@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #e1e1e1;
+  position: relative;
+  font-family: 'Press Start 2P';
+  width: auto;
+  position: relative;
+}
+
+.security {
+  z-index: 20;
+}
+
+.choice {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: calc(4100px - 100%);
+  background-color: rgba(48, 48, 48, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.choice a {
+  opacity: 1;
+  transform: translateY(-100%);
+  font-size: 2em;
+  padding: 1em 2em;
+  border: 2px solid #303030;
+  margin-top: 4em;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: #303030;
+}
+
+.choice a span {
+  animation: colorTitle 10s infinite;
+}
+
+@keyframes colorTitle {
+  0% {
+    color: #303030;
+  }
+  20% {
+    color: #e74c3c;
+  }
+  40% {
+    color: #2980b9;
+  }
+  60% {
+    color: #8e44ad;
+  }
+  80% {
+    color: #e67e22;
+  }
+  90% {
+    color: #16a085;
+  }
+  100% {
+    color: #303030;
+  }
+}
+
+.choice a:hover {
+  background-color: #303030;
+  color: #e1e1e1;
+  cursor: pointer;
+}

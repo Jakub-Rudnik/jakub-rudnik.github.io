@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zjarany Strażnik</title>
+    <link rel="stylesheet" href="./css/trans.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <section class="trans">
+        <p class="buch">BUCH!</p>
+        <p class="description">O nie! Ukradli wszytskie auta z parkingu który strzegłem :(</p>
+        <p class="work">Wyrzucono cię z pracy!</p>
+        <img class="bridge" src="./svg/underBridge.svg" alt="pod most">
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"
+        integrity="sha256-XDWrid8aGX+NZwSY7JzTu6oWArI71Sw+aUZ9Hd0P5mo=" crossorigin="anonymous"></script>
+
+    <script>
+        gsap.to(".work", { opacity: 1, duration: 1, delay: 29 });
+        gsap.to(".work", { opacity: 0, duration: 1, delay: 4 });
+
+        function display() {
+            document.querySelector(".bridge").style.display = "block";
+        }
+
+        setTimeout("display()", 35000);
+
+    </script>
+
+</body>
+
+</html>

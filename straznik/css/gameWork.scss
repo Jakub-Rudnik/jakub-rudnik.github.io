@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$grey: #e1e1e1;
+$black: #303030;
+
+body {
+    height: 100vh;
+    background-color: $grey;
+    position: relative;
+    font-family: 'Press Start 2P';
+    width: auto;
+    position: relative;
+}
+
+.final {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $black, $alpha: 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+
+    p {
+        font-size: 2.5em;
+        text-align: center;
+        width: 80%;
+    }
+
+    a {
+        opacity: 1;
+        transform: translateY(-100%);
+        font-size: 2em;
+        padding: 1em 2em;
+        border: 2px solid $black;
+        margin-top: 10em;
+        transition: background-color 0.3s ease ;
+        text-decoration: none;
+        color: $grey;
+
+        &:hover {
+            background-color: $black;
+            color: $grey;
+            cursor: pointer;
+        }
+    }
+}
