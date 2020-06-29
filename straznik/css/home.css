@@ -34,11 +34,6 @@ body {
   opacity: 0;
 }
 
-.home .description span {
-  font-size: 0.5em;
-  text-decoration: underline;
-}
-
 @keyframes colorTitle {
   0% {
     color: #303030;
