@@ -1,5 +1,5 @@
 // Global state
-const socket = io('https://czechpiotr.pl/giga-koks-gra');
+const socket = io('https://czechpiotr.pl:4000/giga-koks-gra');
 let gameState = {
     maxRangeValue: 100,
     stage: 1,
