@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("./../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+body,
+*,
+p,
+input {
+  font-family: "Roboto", sans-serif;
+}
+h1{
+  font-family: "Montserrat Bold";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", cursive;
+}
