@@ -1,10 +1,5 @@
 // Global state
-const socket = io("https://czechpiotr.pl/giga-koks-gra", {
-  withCredentials: true,
-  extraHeaders: {
-    "gra": "koks"
-  }
-});
+const socket = io("https://czechpiotr.pl:4000/giga-koks-gra");
 
 let gameState = {
     maxRangeValue: 100,
